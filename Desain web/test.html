@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Text</title>
+    <style>
+        /* Style untuk popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Tombol untuk menampilkan popup -->
+    <button id="popupButton">Tampilkan Popup</button>
+
+    <!-- Popup text -->
+    <div id="popupText" class="popup">
+        <p>Ini adalah popup text baru!</p>
+    </div>
+
+    <script>
+        // Mendapatkan referensi tombol dan popup text
+        var button = document.getElementById("popupButton");
+        var popup = document.getElementById("popupText");
+
+        // Menambahkan event listener untuk tombol
+        button.addEventListener("click", function() {
+            // Menampilkan popup text
+            popup.style.display = "block";
+        });
+    </script>
+</body>
+</html>

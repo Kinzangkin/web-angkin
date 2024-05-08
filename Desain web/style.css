@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ scroll-behavior: smooth;
+}
+
+body {
+ background-color: #191e29;
+ min-height: 100vh;
+ overflow-x: hidden;
+}
+
+.logo {
+ padding-left: 10px;
+ color: #696e79;
+ #text-shadow: 1.2px 1.2px 1px rgba(0, 0, 0, 0.3);
+}
+
+header {
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0px;
+ padding: 3px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 1;
+ backdrop-filter: blur(5px);
+}
+
+.navigation a {
+ color: #696e79;
+ text-decoration: none;
+ padding: 0 10px;
+ border-radius: 20px;
+ margin: 0 5px;
+ font-size: 15px;
+ font-weight: 600;
+ #text-shadow: 1.2px 1.2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.navigation a:hover {
+ background-color: #01c38d;
+}
+
+.section1 {
+ display: flex;
+ height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(to top, white, #87cefa);
+ align-items: center;
+ justify-content: center;
+}
+
+.section1 h1 {
+ color: #696e79;
+ font-size: 30px;
+}
+
+.section1 img {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ pointer-events: none;
+ z-index: 1;
+}
+
+.section2 {
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ width: 100%;
+ align-items: left;
+ justify-content: center;
+ padding-left: 40px;
+}
+
+.section2 h2 {
+ color: white;
+}
+
+.bar {
+ display: flex;
+ background: #696e79;
+ border-radius: 50px;
+ height: 20px;
+ width: 50%;
+}
+
+.bar1 {
+ margin: 20px;
+}
+
+.persentase1 {
+ background: #01c38d;
+ height: 20px;
+ width: 35%;
+ border-radius: 70px;
+}
+
+.persentase2 {
+ background: #01c38d;
+ height: 20px;
+ width: 85%;
+ border-radius: 70px;
+}
+
+.persentase3 {
+ background: #01c38d;
+ height: 20px;
+ width: 60%;
+ border-radius: 70px;
+}
+
+.persentase4 {
+ background: #01c38d;
+ height: 20px;
+ width: 70%;
+ border-radius: 70px;
+}
+
+.persentase1, .persentase2, .persentase3, .persentase4 {
+ box-shadow: 0px 0px 50px 0px #01c38d;
+ mix-blend-mode: lighten;
+ opacity: 1;
+}
